@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  /* Hemos agregado height: 100vha body... esto hace que el cuerpo tenga exactamente la misma altura que la ventana gráfica. 
+  Para pegar el pie de página en la parte inferior, se necesitará usar flex y cambiar la dirección a columna.*/
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -24,3 +26,59 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* Solución */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+.content{
+  /* Utilizamos flex:1, para que el pie de página está en la parte inferior y permanecen en su lugar si cambia el tamaño de la pantalla. */
+  flex: 1; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  gap: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+

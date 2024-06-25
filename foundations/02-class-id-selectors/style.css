@@ -1,0 +1,18 @@
+.impares {
+    background-color: rgb(236, 108, 108);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#segundo {
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+.ajuste-fuente {
+    font-size: 24px;
+}
+
+#cuarto {
+    background-color: #008000;
+    font-weight: bold;
+}
